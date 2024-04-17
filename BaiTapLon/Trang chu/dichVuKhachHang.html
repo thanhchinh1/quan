@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mũ Bảo Hiểm</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../fontawesome/js/all.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- header -->
+    <section class="myheader bg-light">
+      <div class="container-fluid bg-light">
+        <div class="row p-3">
+          <div class="col-md-3">
+            <a class="Sitemap" href="#">Trang Sitemap</a>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <a href="../Trang chu/Trangchu.html"
+              ><img
+                src="../img/logo/Logo_TC_diamond.webp"
+                alt=""
+                height="135px"
+            /></a>
+          </div>
+          <div class="col-md-2">
+            <!-- Button trigger modal -->
+            <i class="fa-solid fa-user"></i>
+            <button
+              type="button"
+              class="btn btn-primary-none"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Đăng nhập
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Đăng nhập
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <!-- modal body  -->
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-10">
+                          <div class="card-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="username">Tên đăng nhập</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="username"
+                                  placeholder="Nhập tên đăng nhập"
+                                />
+                              </div>
+                              <div class="form-group">
+                                <label for="password">Mật khẩu</label>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  id="password"
+                                  placeholder="Nhập mật khẩu"
+                                />
+                              </div>
+                              <button
+                                type="submit"
+                                class="btn btn-primary bg-dark btn-block mt-1"
+                              >
+                                Đăng Nhập
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- kt modal body  -->
+                  <div class="modal-footer">
+                    <a href="../Trang chu/dangKy.html">
+                      <button
+                        type="button"
+                        class="btn btn-success"
+                        onclick="openRegisterModal()"
+                      >
+                        Đăng Ký
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-1">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            <a href="#">Giỏ hàng</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mymainmenu">
+      <div class="container-fluid bg-light">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-5">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container">
+                <a class="navbar-brand" href="../Trang chu/Trangchu.html"
+                  >Trang chủ</a
+                >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../Trang chu/gioiThieu.html"
+                        >Giới thiệu <span class="sr-only">(current)</span></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="../Trang chu/sanPham.html"
+                        >Các sản phẩm</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="../Trang chu/dichVuKhachHang.html"
+                        >Dịch vụ khách hàng</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../Trang chu/tinTuc.html"
+                        >Tin tức</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <div class="input-group mb-3">
+              <input type="text" placeholder="Tìm kiếm" aria-label="Username" />
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content -->
+    <section class="mycontent">
+      <div class="container">
+        <div class="row text-center">
+          <h3>Chào mừng đến bộ phận Chăm Sóc Khách Hàng</h3>
+          <h5>Hôm nay chúng tôi có thể làm gì để giúp bạn?</h5>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="">1. Hỗ trợ trực tuyến:</p>
+            <p>
+              Cung cấp tính năng trò chuyện trực tuyến hoặc hệ thống hỗ trợ qua email để giải đáp mọi thắc mắc của
+              khách hàng về sản phẩm, chính sách mua hàng, vận chuyển và trả hàng.<br />
+            </p>
+            <p>2. Tư vấn sản phẩm:</p>
+            <p>
+              Cung cấp thông tin chi tiết về các sản phẩm mũ bảo hiểm, bao gồm đặc điểm kỹ thuật, chất liệu, 
+              kích thước và hình ảnh để giúp khách hàng lựa chọn sản phẩm phù hợp với nhu cầu và sở thích của họ.<br />
+            </p>
+            <p>3. Hướng dẫn sử dụng:</p>
+            <p>
+              Cung cấp hướng dẫn sử dụng chi tiết và cẩn thận về cách sử dụng mũ bảo hiểm để đảm bảo an toàn tối đa cho người dùng.<br />
+            </p>
+            <p>
+              *Trong vòng 24h sẽ có nhân viên liên hệ lại xác nhận đơn hàng.
+              Thời gian giao hàng tính từ thời điểm xác nhận đơn hàng (thời gian
+              giao hàng dự kiến nhân viên xác nhận đơn hàng sẽ báo lại)
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>Tôi muốn trả hàng</p>
+            <p>(*) Điều kiện áp dụng đổi trả hàng:</p>
+
+            <p>
+              Sản phẩm chưa qua sử dụng, còn nguyên tem mác và phiếu mua hàng.
+              Đối với sản phẩm được tặng, khách hàng cần cung cấp số điện thoại
+              mua hàng để được hỗ trợ. <br />
+
+              Thời gian đổi hàng: Trong vòng 30 ngày kể từ thời điểm mua hàng.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="myfoooter bg-dark text-white py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-2">
+            <h4>MUA SẮM</h4>
+            <ul class="list-menu">
+              <li class="list-meu">Giao hàng</li>
+              <li class="list-meu">Thanh toán</li>
+              <li class="list-meu">Trả hàng</li>
+              <li class="list-meu">Cửa hàng</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>THÔNG TIN</h4>
+            <ul class="list-menu">
+              <li class="list-meu">Huỳnh Văn Quân</li>
+              <li class="list-meu">Khoá 18</li>
+              <li class="list-meu">MSSV: 22636731</li>
+              <li class="list-meu">Khoa Công Nghệ Thông Tin</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>MẠNG XÃ HỘI</h4>
+            <ul class="list-menu">
+              <li class="list-meu">Facebook</li>
+              <li class="list-meu">Zalo</li>
+              <li class="list-meu">Tiktok</li>
+              <li class="list-meu">Integram</li>
+            </ul>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+        <hr class="custom-hr" />
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-7">
+            <p class="m-0">&copy;Bài tập lớn môn Hệ thống&công nghệ web</p>
+            <p class="m-0">Giáo viên hướng dẫn Đặng Văn Thuận</p>
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

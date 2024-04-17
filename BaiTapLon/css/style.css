@@ -1,0 +1,26 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+a {
+  color: #000;
+}
+a:hover {
+  border-bottom: #000;
+  color: #000;
+}
+.input-group input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+.custom-hr {
+  background-color: aliceblue;
+}
+.myfoooter ul {
+  list-style: none;
+}
+.sanpham a:hover {
+  background-color: rgb(49, 133, 250);
+  color: #ffffff;
+}
